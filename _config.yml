@@ -1,1 +1,3 @@
 exclude: ["README.md", "eop-website.iml", "assets-original"]
+sass:
+  sass_dir: "_scss"
