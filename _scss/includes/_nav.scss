@@ -15,19 +15,29 @@
     a {
       display: block;
       text-decoration: none;
-      padding: 12px;
+      padding: 16px;
       color: $orange-900;
     }
 
     &:hover a,
+    &.active a,
     &.active:hover a {
-      background-color: $orange-800;
+      padding-bottom: 12px;
+    }
+
+    &.active a,
+    &.active:hover a {
       color: #FFF;
+      background-color: $orange-700;
     }
 
     &.active a {
-      color: #FFF;
-      background-color: $orange-700;
+      border-bottom: solid 4px $orange-700;
+    }
+
+    &:hover a,
+    &.active:hover a {
+      border-bottom: solid 4px $orange-900;
     }
   }
 }
