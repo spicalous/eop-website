@@ -11,6 +11,23 @@
   border-bottom: 1px;
 
   &-item {
-    padding: 12px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 12px;
+      color: $orange-900;
+    }
+
+    &:hover a,
+    &.active:hover a {
+      background-color: $orange-800;
+      color: #FFF;
+    }
+
+    &.active a {
+      color: #FFF;
+      background-color: $orange-700;
+    }
   }
 }
