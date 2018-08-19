@@ -3,8 +3,8 @@
     {% for nav in site.nav_list %}
       {% assign matching_page = site.pages | where: "path", nav.path | first %}
       {% if matching_page %}
-        <li class="nav-item{% if matching_page.url == page.url %} active{% endif %}">
-          <a href="{{ matching_page.path }}">{{ nav.nav_title }}</a>
+        <li class="nav-item{% if matching_page.path == page.path %} active{% endif %}">
+          <a href="{{ matching_page.url }}">{{ nav.nav_title }}</a>
         </li>
       {% endif %}
     {% endfor %}
