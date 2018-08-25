@@ -2,6 +2,8 @@ exclude: ["README.md", "eop-website.iml", "assets-original"]
 sass:
   sass_dir: "_scss"
 nav_list:
+  - path: index.html
+    nav_title: "Home"
   - path: about.html
     nav_title: "About"
   - path: sign-up.html
