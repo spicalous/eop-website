@@ -1,0 +1,37 @@
+@mixin btn-style($bg-colour, $text-colour) {
+  background-color: $bg-colour;
+  color: $text-colour;
+
+    &:active {
+      background-color: darken($bg-colour, 5%);
+    }
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  border: none;
+  transition: all 200ms ease-out;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 12px 10px -10px $grey-400;
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.btn-main {
+  @include btn-style($orange-700, #FFF);
+}

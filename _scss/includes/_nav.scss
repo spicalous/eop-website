@@ -19,7 +19,6 @@
 
     a {
       display: block;
-      text-decoration: none;
       padding: 16px;
       color: $orange-900;
     }
@@ -34,14 +33,10 @@
     &.active:hover a {
       color: #FFF;
       background-color: $orange-700;
-    }
-
-    &.active a {
       border-bottom: solid 4px $orange-700;
     }
 
-    &:hover a,
-    &.active:hover a {
+    &:hover a {
       border-bottom: solid 4px $orange-900;
     }
   }
