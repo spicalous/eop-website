@@ -1,0 +1,16 @@
+.banner-container {
+  margin-left: -$gutter-width;
+  margin-right: -$gutter-width;
+  overflow: hidden;
+  max-height: 450px;
+
+  img {
+    min-height: 100%;
+    width: 100%;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
