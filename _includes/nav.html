@@ -7,7 +7,7 @@
       {% assign matching_page = site.pages | where: "path", nav.path | first %}
       {% if matching_page %}
         <li class="nav-item{% if matching_page.path == page.path %} active{% endif %}">
-          <a href="{{ matching_page.url | relative_url }}">{{ nav.nav_title }}</a>
+          <a class="nav-link" href="{{ matching_page.url | relative_url }}">{{ nav.nav_title }}</a>
         </li>
       {% endif %}
     {% endfor %}
