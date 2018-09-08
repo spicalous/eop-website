@@ -1,4 +1,45 @@
+// Very basic column setup - same as bootstrap but only what is needed.
+// See bootstrap docs on how to use
+
+// Container provides consistent left and right padding
+// Columns provide dynamic columns based on width
+// You can use columns by themselves outside of containers
+// To use columns directly as child elements of containers you need a row to cancel out container padding
+
 .container {
   padding-left: $gutter-width;
   padding-right: $gutter-width;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter-width;
+  margin-right: -$gutter-width;
+}
+
+@mixin make-col($size, $columns) {
+  flex: 0 0 percentage($size / $columns);
+  // Add a `max-width` to ensure content within each column does not blow out
+  // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
+  // do not appear to require this.
+  max-width: percentage($size / $columns);
+}
+
+// Make columns without breakpoints
+// e.g. col-1 to col-12
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    @include make-col($i, $columns);
+  }
+}
+
+// Make columns with breakpoints
+// e.g. col-sm-1 to col-sm-12 e.t.c.
+@each $name, $width in $breakpoints {
+  @for $i from 1 through $columns {
+    .col-#{$name}-#{$i} {
+      @include make-col($i, $columns);
+    }
+  }
 }
