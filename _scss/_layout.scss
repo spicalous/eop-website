@@ -37,9 +37,14 @@
 // Make columns with breakpoints
 // e.g. col-sm-1 to col-sm-12 e.t.c.
 @each $name, $width in $breakpoints {
-  @for $i from 1 through $columns {
-    .col-#{$name}-#{$i} {
-      @include make-col($i, $columns);
+
+  // Makes the style apply to the given breakpoint and wider.
+  @media (min-width: $width) {
+
+    @for $i from 1 through $columns {
+      .col-#{$name}-#{$i} {
+        @include make-col($i, $columns);
+      }
     }
   }
 }
