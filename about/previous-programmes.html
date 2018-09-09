@@ -1,9 +1,124 @@
 ---
 title: Previous Programmes - European Ordination Programme
 layout: base
+programmes:
+  2018:
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/01.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/02.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/03.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/04.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/05.png
+    -
+      name: Pete Chitvicheankul
+      dob: 4 April 1994
+      location: London, UK 🇬🇧
+      portraitURL: assets/images/2018/portraits/06.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/07.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/08.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/09.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/10.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/11.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/12.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/13.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/14.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/15.png
+    -
+      name: Ben Lertlumprasertkul
+      dob: 12 September 1992
+      location: London, England 🇬🇧
+      portraitURL: assets/images/2018/portraits/16.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/17.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/18.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/19.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/20.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/21.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/22.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/23.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/24.png
+    -
+      name:
+      location:
+      portraitURL: assets/images/2018/portraits/25.png
 ---
 <div class="container">
   <h1>2018</h1>
+  <p>
+    The programme took place over two weeks, starting on the 4th June, and ending on the 15th June. A total of 24
+    people took part from 9 countries all over europe.
+  </p>
+  <div class="row">
+    {% for person in page.programmes[2018] %}
+      <div class="col-3 col-sm-2 col-md-1 text-center">
+        {% include portrait-card.html person=person %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 
