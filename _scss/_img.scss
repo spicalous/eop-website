@@ -1,13 +1,3 @@
-.banner-container {
-  overflow: hidden;
-  max-height: 450px;
-
-  img {
-    box-shadow: 0 0 10px 4px $grey-400;
-    margin-bottom: -4px; // hide bottom shadow
-  }
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
