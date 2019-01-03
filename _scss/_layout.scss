@@ -6,9 +6,21 @@
 // You can use columns by themselves outside of containers
 // To use columns directly as child elements of containers you need a row to cancel out container padding
 
-.container {
+.container,
+.container-fluid {
+  width: 100%;
   padding-left: $gutter-width;
   padding-right: $gutter-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  @each $breakpoint, $max-width in $container-max-widths {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      max-width: $max-width;
+    }
+  }
 }
 
 .row {
