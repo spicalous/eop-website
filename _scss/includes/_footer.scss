@@ -1,6 +1,7 @@
 .footer {
   font-size: 0.8rem;
-  padding: $gutter-width;
+  margin-top: $gutter-width;
+  margin-bottom: $gutter-width;
 
   &-title {
     font-weight: bold;

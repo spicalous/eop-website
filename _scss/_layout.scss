@@ -6,21 +6,17 @@
 // You can use columns by themselves outside of containers
 // To use columns directly as child elements of containers you need a row to cancel out container padding
 
-.container,
-.container-fluid {
-  width: 100%;
-  padding-left: $gutter-width;
-  padding-right: $gutter-width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .container {
+  @include make-container();
+
   @each $breakpoint, $max-width in $container-max-widths {
     @media (min-width: map-get($breakpoints, $breakpoint)) {
       max-width: $max-width;
     }
   }
+}
+.container-fluid {
+  @include make-container();
 }
 
 .row {
@@ -28,14 +24,6 @@
   flex-wrap: wrap;
   margin-left: -$gutter-width;
   margin-right: -$gutter-width;
-}
-
-@mixin make-col($size, $columns) {
-  flex: 0 0 percentage($size / $columns);
-  // Add a `max-width` to ensure content within each column does not blow out
-  // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
-  // do not appear to require this.
-  max-width: percentage($size / $columns);
 }
 
 // Make columns without breakpoints
