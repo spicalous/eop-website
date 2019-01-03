@@ -5,14 +5,8 @@ layout: base
 <div class="container">
   <h1>Sign up</h1>
   <p>Fill out the form below to enter into the programme</p>
-  <!--THAI-->
-  <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1dCDNsCRplMKhZFr3se4jYfL48NM08Qeoap9Q6kjefafMdw/viewform?embedded=true" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
-  <!--ENGLISH-->
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoLKsMTvL3W-oR4m6NXAuN77m2G9r2S-D_nVVtWNFJZwRocA/viewform?embedded=true" width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-  <!--GERMAN-->
-  <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPOlAdBPnHuEulhw09PO7_cnJI7gOMOt8rnQtuDwnLTWRsHg/viewform?embedded=true" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
-  <!--TEST-->
-  <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSu3MyewBGRLxZWDQ_wUUBCJz5WyV-xwmtXUlOOgW3473QkQ/viewform?embedded=true" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+  <p><a id="english-form-link" href="javascript:void(0);">English</a> | <a id="thai-form-link" href="javascript:void(0);">Thai</a> | <a id="german-form-link" href="javascript:void(0);">German</a></p>
+  <iframe id="sign-up-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfoLKsMTvL3W-oR4m6NXAuN77m2G9r2S-D_nVVtWNFJZwRocA/viewform?embedded=true" width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
   <h1>After signing up</h1>
   <p>
     You will need to memorise some text for the ordination ceremony
@@ -24,3 +18,14 @@ layout: base
     <li><a href="{{ "/assets/docs/ordination-chanting-th.txt" | relative_url }}">Download in Thai</a></li>
   </ul>
 </div>
+<script>
+  document.querySelector("#english-form-link").addEventListener("click", event => {
+    document.querySelector("#sign-up-form").setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSfoLKsMTvL3W-oR4m6NXAuN77m2G9r2S-D_nVVtWNFJZwRocA/viewform?embedded=true");
+  });
+  document.querySelector("#thai-form-link").addEventListener("click", event => {
+    document.querySelector("#sign-up-form").setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSe1dCDNsCRplMKhZFr3se4jYfL48NM08Qeoap9Q6kjefafMdw/viewform?embedded=true");
+  });
+  document.querySelector("#german-form-link").addEventListener("click", event => {
+    document.querySelector("#sign-up-form").setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSfPOlAdBPnHuEulhw09PO7_cnJI7gOMOt8rnQtuDwnLTWRsHg/viewform?embedded=true");
+  });
+</script>
