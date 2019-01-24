@@ -4,7 +4,9 @@
 
 @import "variables/colours";
 @import "variables/layout";
+@import "variables/typography";
 
+@import "mixins/colours";
 @import "mixins/layout";
 
 html,
@@ -19,7 +21,9 @@ body {
   html, body { font-size: 16px }
 }
 
+@import "components/alert";
 @import "components/button";
+@import "components/table";
 
 @import "includes/footer";
 @import "includes/nav";

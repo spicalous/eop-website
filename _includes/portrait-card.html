@@ -1,6 +1,6 @@
 <div class="portrait-card">
-  <img class="img-fluid" src="{{ person.portraitURL | relative_url }}" />
-  <div>{{ person.name }}</div>
-  <div>{{ person.location }}</div>
-  <div>{{ person.flag }}</div>
+  <img class="img-fluid" src="{{ include.person.portraitURL | relative_url }}" />
+  <div>{{ include.person.name }}</div>
+  <div>{{ include.person.location }}</div>
+  <div>{{ include.person.flag }}</div>
 </div>
