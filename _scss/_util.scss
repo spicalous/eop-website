@@ -1,3 +1,8 @@
 .w-100 {
   width: 100%;
 }
+
+.px {
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
+}
