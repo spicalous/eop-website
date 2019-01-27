@@ -29,19 +29,91 @@ layout: base
     <a href="{{ "/about/" | relative_url }}"><img class="img-fluid w-100" src="assets/images/2019-poster-en.JPG"/></a>
   </p>
   <h1 class="text-center">Temples in Europe</h1>
-  <div class="row text-center">
-    <div class="col-6 col-md-4">Belgium</div>
-    <div class="col-6 col-md-4">Denmark</div>
-    <div class="col-6 col-md-4">France</div>
-    <div class="col-6 col-md-4">Germany</div>
-    <div class="col-6 col-md-4">Italy</div>
-    <div class="col-6 col-md-4">London</div>
-    <div class="col-6 col-md-4">Manchester</div>
-    <div class="col-6 col-md-4">Netherlands</div>
-    <div class="col-6 col-md-4">Newcastle</div>
-    <div class="col-6 col-md-4">Norway</div>
-    <div class="col-6 col-md-4">Scotland</div>
-    <div class="col-6 col-md-4">Switzerland</div>
-    <div class="col-6 col-md-4">Sweden</div>
+  <div class="row">
+
+    <div class="col-12 px"><h2>🇦🇹 Austria</h2></div>
+    {% for temple in site.data.temples.austria %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇧🇪 Belgium</h2></div>
+    {% for temple in site.data.temples.belgium %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇩🇰 Denmark</h2></div>
+    {% for temple in site.data.temples.denmark %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇫🇷 France</h2></div>
+    {% for temple in site.data.temples.france %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇩🇪 Germany</h2></div>
+    {% for temple in site.data.temples.germany %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇮🇸 Iceland</h2></div>
+    {% for temple in site.data.temples.iceland %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇮🇹 Italy</h2></div>
+    {% for temple in site.data.temples.italy %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇳🇱 Netherlands</h2></div>
+    {% for temple in site.data.temples.netherlands %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇳🇴 Norway</h2></div>
+    {% for temple in site.data.temples.norway %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇸🇪 Sweden</h2></div>
+    {% for temple in site.data.temples.sweden %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇨🇭 Switzerland</h2></div>
+    {% for temple in site.data.temples.switzerland %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
+    <div class="col-12 px"><h2>🇬🇧 United Kingdom</h2></div>
+    {% for temple in site.data.temples.united_kingdom %}
+    <div class="col-6 col-md-6 px">
+      {% include card.html title=temple.title content=temple.content %}
+    </div>
+    {% endfor %}
+
   </div>
 </div>
