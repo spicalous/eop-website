@@ -24,12 +24,12 @@
       color: $orange-900;
     }
 
-    &:hover a,
-    &.active a,
-    &.active:hover a {
-      padding-bottom: 12px;
+    // active nav, not hovered
+    &.active a {
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     }
 
+    // active and hovered
     &.active a,
     &.active:hover a {
       color: #FFF;
@@ -37,6 +37,14 @@
       border-bottom: solid 4px $orange-700;
     }
 
+    // reduce padding on active and hovered nav to account for 4px border
+    &:hover a,
+    &.active a,
+    &.active:hover a {
+      padding-bottom: 12px;
+    }
+
+    // not active, hovered
     &:hover a {
       border-bottom: solid 4px $orange-900;
     }
