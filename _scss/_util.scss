@@ -7,6 +7,11 @@
   padding-right: $gutter-width;
 }
 
+.py {
+  padding-top: $gutter-width;
+  padding-bottom: $gutter-width;
+}
+
 // responsive display utilities
 //
 // Combination of d-none and d-block allows toggling
