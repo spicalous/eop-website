@@ -1,10 +1,18 @@
 # eop-website
 
+## Dependencies
+
+- Ruby 
+- Jekyll `gem install bundler jekyll`
+
+> Tip: Ensure installed gems are on your path. Use `gem environment` to find out location of installed gems
+
 ## Local development
 
-1. Ensure to test locally with base url so that links are correct when built with Github pages
-`jekyll serve --baseurl /eop`
-2. Ensure to include the development config to override any prod config with dev config
-`jekyll serve --config _config.yml,_config_development.yml`
+Run `start.sh`
 
-Everything is included in `start.sh`
+Tested with
+
+- ruby 2.6.5
+- jekyll 4.0.0
+- bundler 1.17.2
