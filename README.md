@@ -12,7 +12,13 @@
 Run `start.sh`
 
 Tested with
+```
+> ruby -v
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
 
-- ruby 2.6.5
-- jekyll 4.0.0
-- bundler 1.17.2
+> jekyll -v
+jekyll 4.0.0
+
+> bundler -v
+Bundler version 2.1.4
+```

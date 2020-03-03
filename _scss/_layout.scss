@@ -26,6 +26,11 @@
   margin-right: -$gutter-width;
 }
 
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important
+}
+
 // Make columns without breakpoints
 // e.g. col-1 to col-12
 @for $i from 1 through $columns {

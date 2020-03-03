@@ -1,7 +1,7 @@
 <nav>
   <ul class="nav">
     <a class="nav-icon" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}{% link assets/images/logo-eop.png %}" width="32" height="32" />
+      <img src="assets/images/logo-eop.png" width="32" height="32" />
     </a>
     {% for nav in site.nav_list %}
       {% assign matching_page = site.pages | where: "path", nav.path | first %}

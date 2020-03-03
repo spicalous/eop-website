@@ -9,7 +9,14 @@ table {
   th,
   td {
     padding: $table-cell-padding;
+  }
+
+  tr {
     border-top: $table-border-width solid $table-border-color;
+  }
+
+  tr:first-child {
+    border-top: none;
   }
 
   thead th {

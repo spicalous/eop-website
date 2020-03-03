@@ -19,18 +19,22 @@ layout: base
     The Dhammakaya Foundation is a non-profit organisation, based on personal development, aiming to promote activities
     for the restoration of morality in individuals, families, societies, and the world.
   </p>
-  <p class="text-center"><a class="btn btn-main" href="{{ "/about/" | relative_url }}">More about the programme</a></p>
-  <h1 class="text-center">European Ordination Programme 2020</h1>
-  <img class="img-fluid" src="{{ "assets/images/2020-poster.jpg" | relative_url }}">
-<!-- Pending 2020 details
-  <div class="text-center">
-    <p><a href="assets/images/2019/original/brochure-en.JPG">Download brochure (en)</a></p>
-    <p><a href="assets/images/2019/original/brochure-th.JPG">Download brochure (th)</a></p>
-    <p><a href="assets/images/2019/original/poster-en.JPG">Download poster (en)</a></p>
-    <p><a href="assets/images/2019/original/poster-th.JPG">Download poster (th)</a></p>
+  <h1 class="text-center mt-3">European Ordination Programme 2020</h1>
+</div>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-9 col-md-10 d-none d-block-sm">
+      <img class="img-fluid w-100" src="assets/images/2020/brochure-en.jpg"/>
+    </div>
+    <img class="img-fluid d-none-sm" src="assets/images/2020/poster-en.jpg"/>
   </div>
--->
-  <h1 class="text-center">European Ordination Programme 2019</h1>
+</div>
+<div class="container">
+  <div class="text-center">
+    <p><a href="assets/images/2020/brochure-en.jpg">Download brochure</a></p>
+  </div>
+  <p class="text-center"><a class="btn btn-main" href="{{ "/about/" | relative_url }}">More about the programme</a></p>
+  <h1 class="text-center mt-3">European Ordination Programme 2019</h1>
   <p>
     20 people took part in the programme which took place over 4 weeks, between 17th June and 14th July 2019.
   </p>
@@ -46,87 +50,87 @@ layout: base
     <img class="px py col-12 col-sm-6 img-fluid" src="{{ "assets/images/2019/misc/9.jpg" | relative_url }}">
     <img class="px py col-12 col-sm-6 img-fluid" src="{{ "assets/images/2019/misc/10.jpg" | relative_url }}">
   </div>
-  <h1 class="text-center">Temples in Europe</h1>
+  <h1 class="text-center mt-3">Temples in Europe</h1>
   <div class="row">
 
-    <div class="col-12 px"><h2>🇦🇹 Austria</h2></div>
+    <div class="col-12 px"><h2 class="mb-0">🇦🇹 Austria</h2></div>
     {% for temple in site.data.temples.austria %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇧🇪 Belgium</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇧🇪 Belgium</h2></div>
     {% for temple in site.data.temples.belgium %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇩🇰 Denmark</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇩🇰 Denmark</h2></div>
     {% for temple in site.data.temples.denmark %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇫🇷 France</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇫🇷 France</h2></div>
     {% for temple in site.data.temples.france %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇩🇪 Germany</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇩🇪 Germany</h2></div>
     {% for temple in site.data.temples.germany %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇮🇸 Iceland</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇮🇸 Iceland</h2></div>
     {% for temple in site.data.temples.iceland %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇮🇹 Italy</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇮🇹 Italy</h2></div>
     {% for temple in site.data.temples.italy %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇳🇱 Netherlands</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇳🇱 Netherlands</h2></div>
     {% for temple in site.data.temples.netherlands %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇳🇴 Norway</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇳🇴 Norway</h2></div>
     {% for temple in site.data.temples.norway %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇸🇪 Sweden</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇸🇪 Sweden</h2></div>
     {% for temple in site.data.temples.sweden %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇨🇭 Switzerland</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇨🇭 Switzerland</h2></div>
     {% for temple in site.data.temples.switzerland %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
     </div>
     {% endfor %}
 
-    <div class="col-12 px"><h2>🇬🇧 United Kingdom</h2></div>
+    <div class="col-12 px"><h2 class="mb-0 mt-3">🇬🇧 United Kingdom</h2></div>
     {% for temple in site.data.temples.united_kingdom %}
     <div class="col-6 col-md-6 px">
       {% include card.html title=temple.title content=temple.content %}
