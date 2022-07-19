@@ -1,15 +1,22 @@
-<nav>
-  <ul class="nav">
-    <a class="nav-icon" href="{{ site.baseurl }}/">
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
       <img src="{{ site.baseurl }}{% link assets/images/logo-eop.png %}" width="32" height="32" />
     </a>
-    {% for nav in site.nav_list %}
-      {% assign matching_page = site.pages | where: "path", nav.path | first %}
-      {% if matching_page %}
-        <li class="nav-item{% if matching_page.path == page.path %} active{% endif %}">
-          <a class="nav-link" href="{{ matching_page.url | relative_url }}">{{ nav.nav_title }}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        {% for nav in site.nav_list %}
+          {% assign matching_page = site.pages | where: "path", nav.path | first %}
+          {% if matching_page %}
+            <li class="nav-item text-center">
+              <a class="nav-link{% if matching_page.path == page.path %} active{% endif %}" href="{{ matching_page.url | relative_url }}" {% if matching_page.path == page.path %}aria-current="page"{% endif %}>{{ nav.nav_title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </nav>
