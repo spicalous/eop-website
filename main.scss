@@ -44,10 +44,10 @@ $orange-A700: #FF6D00;
   --bs-btn-disabled-border-color: #{$orange-600};
 }
 a {
-  color: $orange-600;
+  color: $orange-700;
 }
 a:hover {
-  color: shift-color($orange-600, 20%);
+  color: shift-color($orange-700, 20%);
 }
 .nav-item .nav-link {
   color: shade-color($orange-600, 10%);
@@ -55,6 +55,7 @@ a:hover {
 .nav-item .nav-link.active {
   background-color: $orange-600;
   color: #fff;
+  border-radius: 0.375rem;
 }
 
 #index-header {
