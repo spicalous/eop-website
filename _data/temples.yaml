@@ -141,7 +141,7 @@ germany:
         </small>
       </address>
   -
-    title: Wat Buddha Hamburg
+    title: Wat Phra Dhammakaya Hamburg
     content: |
       <address>
         <small>
@@ -195,7 +195,7 @@ italy:
 
 netherlands:
   -
-    title: Wat Phra Dhammakay Netherlands
+    title: Wat Phra Dhammakaya Netherlands
     content: |
       <address>
         <small>
@@ -284,7 +284,6 @@ united_kingdom:
           Tel <a href="tel:+441483475757">(+44)1483-475757</a>
         </small>
       </address>
-
   -
     title: Wat Phra Dhammakaya Manchester
     content: |
