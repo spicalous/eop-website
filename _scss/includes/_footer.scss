@@ -5,7 +5,7 @@
   padding: $gutter-width;
 
   &-description {
-    margin-top: $gutter-width / 2;
+    margin-top: calc($gutter-width / 2);
     color: var(--bs-gray-600);
   }
 }
